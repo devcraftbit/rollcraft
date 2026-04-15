@@ -1,0 +1,633 @@
+<!doctype html>
+<html data-page="games.html" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Games | RollCraft</title>
+    <meta
+      name="description"
+      content="Browse our complete catalog of board games and bestsellers"
+    />
+    <script defer src="assets/js/site.js"></script>
+
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <link rel="stylesheet" href="assets/css/chrome.css" />
+    <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rollcraft.com/" />
+    <meta
+      property="og:title"
+      content="RollCraft | Designing Unforgettable Tabletop Adventures"
+    />
+    <meta
+      property="og:description"
+      content="Main page showcasing our newest board games and studio overview"
+    />
+    <meta property="og:image:alt" content="RollCraft – tabletop game studio" />
+    <meta property="og:site_name" content="RollCraft" />
+    <meta property="og:image" content="assets/img/hero_banner.webp" />
+    <link
+      rel="shortcut icon"
+      href="assets/brand/favicon.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body class="antialiased text-left">
+    <header class="site-header sticky-light">
+      <div class="header-container">
+        <a href="index.html" class="brand">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M 4 18 L 4 8 A 2 2 0 0 1 6 6 L 8 6 A 3 3 0 0 1 8 12 L 4 12 M 6 12 L 10 18 M 21 6 L 18 6 A 6 6 0 0 0 18 18 L 21 18"
+              />
+            </g>
+            <g fill="currentColor">
+              <circle cx="4" cy="18" r="2" />
+              <circle cx="11" cy="9" r="2" />
+              <circle cx="10" cy="18" r="2" />
+              <circle cx="21" cy="6" r="2" />
+              <circle cx="12" cy="12" r="2" />
+              <circle cx="21" cy="18" r="2" />
+            </g>
+          </svg>
+          <span class="brand-name">RollCraft</span>
+        </a>
+        <nav class="desktop-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="games.html">Games</a>
+          <a href="blog.html">Blog</a>
+        </nav>
+        <div class="header-actions">
+          <a href="games.html" class="btn btn-cta">Shop Games</a>
+          <button
+            class="burger-menu"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-nav-overlay" id="mobile-menu">
+        <div class="mobile-bottom-sheet">
+          <button class="close-menu" aria-label="Close menu">
+            <svg
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+          <nav class="mobile-nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="games.html">Games</a>
+            <a href="blog.html">Blog</a>
+            <a href="games.html" class="btn btn-cta mobile-cta">Shop Games</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="py-12 md:py-20 px-6 md:px-12 max-w-7xl mx-auto">
+        <div
+          class="grid md:grid-cols-2 gap-8 items-center bg-white border-2 border-brown squircle p-6 md:p-12"
+        >
+          <div class="space-y-6">
+            <h1 class="text-4xl md:text-6xl font-bold text-[#3B2B20]">
+              Our Games
+            </h1>
+            <p class="text-lg md:text-xl text-[#3B2B20]/80">
+              Browse our complete catalog of board games and bestsellers. Find
+              your next favorite tabletop adventure today.
+            </p>
+          </div>
+          <div class="relative h-64 md:h-96 w-full">
+            <img
+              src="assets/img/hero_small.webp"
+              src=""
+              alt="Soft focus of a 20-sided die on a game board"
+              class="absolute inset-0 w-full h-full object-cover squircle border-2 border-brown"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- All Games Section -->
+      <section
+        id="all-games"
+        class="py-12 md:py-20 px-6 md:px-12 max-w-7xl mx-auto"
+      >
+        <div class="mb-10 space-y-4">
+          <h2 class="text-3xl md:text-5xl font-bold text-[#3B2B20]">
+            All Games
+          </h2>
+          <p class="text-lg text-[#3B2B20]/80">
+            Explore our full collection of strategy, family, and party games.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Game Card 1 -->
+          <div
+            class="bg-white border-2 border-brown squircle overflow-hidden flex flex-col"
+          >
+            <img
+              src="assets/img/all_games_1.webp"
+              src=""
+              alt="Dragon's Hoard game components"
+              class="h-56 w-full object-cover border-b-2 border-brown"
+              loading="lazy"
+            />
+            <div class="p-6 flex flex-col flex-grow space-y-4">
+              <span
+                class="text-sm font-bold text-[#C13828] uppercase tracking-wider"
+                >Strategy</span
+              >
+              <h3 class="text-2xl font-bold">Dragon's Hoard</h3>
+              <p class="text-[#3B2B20]/80 flex-grow">
+                Gather resources and build your realm before the dragon wakes.
+              </p>
+            </div>
+          </div>
+
+          <!-- Game Card 2 -->
+          <div
+            class="bg-white border-2 border-brown squircle overflow-hidden flex flex-col"
+          >
+            <img
+              src="assets/img/all_games_2.webp"
+              src=""
+              alt="Forest Builders game board"
+              class="h-56 w-full object-cover border-b-2 border-brown"
+              loading="lazy"
+            />
+            <div class="p-6 flex flex-col flex-grow space-y-4">
+              <span
+                class="text-sm font-bold text-[#C13828] uppercase tracking-wider"
+                >Family</span
+              >
+              <h3 class="text-2xl font-bold">Forest Builders</h3>
+              <p class="text-[#3B2B20]/80 flex-grow">
+                A peaceful tile-laying game about growing a vibrant woodland.
+              </p>
+            </div>
+          </div>
+
+          <!-- Game Card 3 -->
+          <div
+            class="bg-white border-2 border-brown squircle overflow-hidden flex flex-col"
+          >
+            <img
+              src="assets/img/all_games_3.webp"
+              src=""
+              alt="Mystery Mansion cards"
+              class="h-56 w-full object-cover border-b-2 border-brown"
+              loading="lazy"
+            />
+            <div class="p-6 flex flex-col flex-grow space-y-4">
+              <span
+                class="text-sm font-bold text-[#C13828] uppercase tracking-wider"
+                >Co-op</span
+              >
+              <h3 class="text-2xl font-bold">Mystery Mansion</h3>
+              <p class="text-[#3B2B20]/80 flex-grow">
+                Work together to uncover secrets and escape the house.
+              </p>
+            </div>
+          </div>
+
+          <!-- Game Card 4 -->
+          <div
+            class="bg-white border-2 border-brown squircle overflow-hidden flex flex-col"
+          >
+            <img
+              src="assets/img/all_games_4.webp"
+              src=""
+              alt="Space Traders box"
+              class="h-56 w-full object-cover border-b-2 border-brown"
+              loading="lazy"
+            />
+            <div class="p-6 flex flex-col flex-grow space-y-4">
+              <span
+                class="text-sm font-bold text-[#C13828] uppercase tracking-wider"
+                >Card Game</span
+              >
+              <h3 class="text-2xl font-bold">Space Traders</h3>
+              <p class="text-[#3B2B20]/80 flex-grow">
+                A fast-paced card game of galactic commerce and negotiation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Game Card 5 -->
+          <div
+            class="bg-white border-2 border-brown squircle overflow-hidden flex flex-col"
+          >
+            <img
+              src="assets/img/all_games_5.webp"
+              src=""
+              alt="Kingdoms Fall miniature figures"
+              class="h-56 w-full object-cover border-b-2 border-brown"
+              loading="lazy"
+            />
+            <div class="p-6 flex flex-col flex-grow space-y-4">
+              <span
+                class="text-sm font-bold text-[#C13828] uppercase tracking-wider"
+                >Heavy Strategy</span
+              >
+              <h3 class="text-2xl font-bold">Kingdoms Fall</h3>
+              <p class="text-[#3B2B20]/80 flex-grow">
+                Lead your army to victory in this deep tactical experience.
+              </p>
+            </div>
+          </div>
+
+          <!-- Game Card 6 -->
+          <div
+            class="bg-white border-2 border-brown squircle overflow-hidden flex flex-col"
+          >
+            <img
+              src="assets/img/all_games_6.webp"
+              src=""
+              alt="Goblin Party dice"
+              class="h-56 w-full object-cover border-b-2 border-brown"
+              loading="lazy"
+            />
+            <div class="p-6 flex flex-col flex-grow space-y-4">
+              <span
+                class="text-sm font-bold text-[#C13828] uppercase tracking-wider"
+                >Party</span
+              >
+              <h3 class="text-2xl font-bold">Goblin Party</h3>
+              <p class="text-[#3B2B20]/80 flex-grow">
+                A hilarious game of quick reflexes and silly rules.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- By Player Count Section -->
+      <section
+        id="by-player-count"
+        class="py-12 md:py-20 px-6 md:px-12 max-w-7xl mx-auto"
+      >
+        <div class="mb-10 space-y-4">
+          <h2 class="text-3xl md:text-5xl font-bold text-[#3B2B20]">
+            By Player Count
+          </h2>
+          <p class="text-lg text-[#3B2B20]/80">
+            Find the perfect game for your group size.
+          </p>
+        </div>
+
+        <div class="space-y-8">
+          <!-- Row 1 -->
+          <div
+            class="bg-white border-2 border-brown squircle overflow-hidden grid md:grid-cols-2 items-center"
+          >
+            <img
+              src="assets/img/player_count_solo.webp"
+              src=""
+              alt="Person playing a solo board game"
+              class="h-64 md:h-full w-full object-cover md:border-r-2 border-brown"
+              loading="lazy"
+            />
+            <div class="p-8 md:p-12 space-y-4">
+              <h3 class="text-3xl font-bold text-[#3B2B20]">1-2 Players</h3>
+              <p class="text-[#3B2B20]/80">
+                Perfect for solo quests, quiet evenings, or intense head-to-head
+                duels. These games offer deep strategy without needing a crowd.
+              </p>
+              <a
+                href="index.html#contact"
+                class="inline-flex items-center text-[#C13828] font-bold hover:underline"
+              >
+                Browse Small Group Games
+                <svg
+                  class="w-5 h-5 ml-2"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div
+            class="bg-white border-2 border-brown squircle overflow-hidden grid md:grid-cols-2 items-center"
+          >
+            <div class="p-8 md:p-12 space-y-4 order-2 md:order-1">
+              <h3 class="text-3xl font-bold text-[#3B2B20]">3-4 Players</h3>
+              <p class="text-[#3B2B20]/80">
+                The classic game night size. Discover balanced mechanics,
+                engaging trade, and fun competition tailored for medium groups.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center text-[#C13828] font-bold hover:underline"
+              >
+                Browse Classic Group Games
+                <svg
+                  class="w-5 h-5 ml-2"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+            <img
+              src="assets/img/player_count_group.webp"
+              src=""
+              alt="Four people playing a board game"
+              class="h-64 md:h-full w-full object-cover md:border-l-2 border-brown order-1 md:order-2"
+              loading="lazy"
+            />
+          </div>
+
+          <!-- Row 3 -->
+          <div
+            class="bg-white border-2 border-brown squircle overflow-hidden grid md:grid-cols-2 items-center"
+          >
+            <img
+              src="assets/img/player_count_party.webp"
+              src=""
+              alt="Large group laughing around a party game"
+              class="h-64 md:h-full w-full object-cover md:border-r-2 border-brown"
+              loading="lazy"
+            />
+            <div class="p-8 md:p-12 space-y-4">
+              <h3 class="text-3xl font-bold text-[#3B2B20]">5+ Players</h3>
+              <p class="text-[#3B2B20]/80">
+                Bring everyone to the table. From social deduction to fast-paced
+                party rules, these titles handle big crowds with ease.
+              </p>
+              <a
+                href="index.html#contact"
+                class="inline-flex items-center text-[#C13828] font-bold hover:underline"
+              >
+                Browse Large Group Games
+                <svg
+                  class="w-5 h-5 ml-2"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bestsellers Section -->
+      <section id="bestsellers" class="py-12 md:py-20">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+          <div class="mb-10 space-y-4">
+            <h2 class="text-3xl md:text-5xl font-bold text-[#3B2B20]">
+              Bestsellers
+            </h2>
+            <p class="text-lg text-[#3B2B20]/80">
+              The titles our community loves the most.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Bestseller 1 -->
+            <div
+              class="relative bg-white border-2 border-brown squircle overflow-hidden group"
+            >
+              <img
+                src="assets/img/bestsellers.webp"
+                src=""
+                alt="Beautiful flat lay of popular game components"
+                class="w-full h-80 object-cover"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-[#3B2B20] to-transparent opacity-80"
+              ></div>
+              <div class="absolute bottom-0 left-0 p-8 space-y-3">
+                <span
+                  class="bg-[#C13828] text-white px-3 py-1 text-sm font-bold squircle"
+                  >#1 Bestseller</span
+                >
+                <h3 class="text-3xl font-bold text-white">Epic Voyages</h3>
+                <p class="text-white/90 max-w-md">
+                  Set sail across a beautifully illustrated map. Gather crew,
+                  face events, and claim glory.
+                </p>
+                <a
+                  href="index.html#contact"
+                  class="inline-block text-white border-2 border-white squircle py-2 px-6 font-bold mt-2 hover:bg-white hover:text-[#3B2B20] transition-colors"
+                  >Shop Now</a
+                >
+              </div>
+            </div>
+
+            <!-- Bestseller 2 -->
+            <div
+              class="relative bg-white border-2 border-brown squircle overflow-hidden group"
+            >
+              <img
+                src="assets/img/bestsellers_alt.webp"
+                src=""
+                alt="Arranged components of a popular card game"
+                class="w-full h-80 object-cover"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-[#3B2B20] to-transparent opacity-80"
+              ></div>
+              <div class="absolute bottom-0 left-0 p-8 space-y-3">
+                <span
+                  class="bg-[#C13828] text-white px-3 py-1 text-sm font-bold squircle"
+                  >Fan Favorite</span
+                >
+                <h3 class="text-3xl font-bold text-white">Market Tactics</h3>
+                <p class="text-white/90 max-w-md">
+                  A thrilling economy game where timing and sharp deals lead to
+                  victory.
+                </p>
+                <a
+                  href="index.html#contact"
+                  class="inline-block text-white border-2 border-white squircle py-2 px-6 font-bold mt-2 hover:bg-white hover:text-[#3B2B20] transition-colors"
+                  >Shop Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Info Section (To satisfy clickability requirements) -->
+      <section
+        id="contact-help"
+        class="py-12 md:py-16 px-6 md:px-12 max-w-7xl mx-auto"
+      >
+        <div
+          class="bg-[#3B2B20] text-white squircle p-8 md:p-12 text-center space-y-6"
+        >
+          <h2 class="text-3xl md:text-4xl font-bold">
+            Need help choosing a game?
+          </h2>
+          <p class="text-lg text-white/80 max-w-2xl mx-auto">
+            Our team is happy to recommend the perfect fit for your next game
+            night. Reach out to us below.
+          </p>
+          <div
+            class="flex flex-col md:flex-row justify-center items-center gap-6 pt-4"
+          >
+            <a
+              href="mailto:hello@rollcraftgames.ca"
+              class="flex items-center space-x-2 text-white hover:text-[#C13828] transition-colors"
+            >
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+              <span class="font-bold">hello@rollcraftgames.ca</span>
+            </a>
+            <a
+              href="tel:+15145550138"
+              class="flex items-center space-x-2 text-white hover:text-[#C13828] transition-colors"
+            >
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              <span class="font-bold">+1 514 555 0138</span>
+            </a>
+            <a
+              href="https://maps.app.goo.gl/Dtriahmx4hS7bvdK9"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center space-x-2 text-white hover:text-[#C13828] transition-colors"
+            >
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span class="font-bold">Visit Our Studio</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <span class="footer-logo">RollCraft</span>
+          <p class="tagline">Designing unforgettable tabletop adventures</p>
+        </div>
+        <div class="footer-links">
+          <h3>Explore</h3>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="games.html">Games</a>
+            <a href="blog.html">Blog</a>
+          </nav>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <address>
+            <a
+              href="https://maps.app.goo.gl/Dtriahmx4hS7bvdK9"
+              target="_blank"
+              rel="noopener"
+            >
+              1000 De La Gauchetiere Street<br />
+              Montreal, QC H3B 4W5<br />
+              Canada
+            </a>
+            <a href="tel:+15145550138">+1 514 555 0138</a>
+            <a href="mailto:hello@rollcraftgames.ca">hello@rollcraftgames.ca</a>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="legal-links">
+          <a href="terms-conditions.html">Terms</a>
+          <a href="privacy-policy.html">Privacy</a>
+        </div>
+        <p class="copyright">&copy; 2026 RollCraft. All rights reserved.</p>
+      </div>
+    </footer>
+    <script defer src="assets/js/chrome.js"></script>
+  </body>
+</html>

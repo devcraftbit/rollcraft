@@ -1,0 +1,326 @@
+:root {
+  --bg-color: #f2ebe1;
+  --text-color: #3b2818;
+  --accent-color: #d13a3a;
+  --header-bg: #fffcf8;
+  --border-color: #3b2818;
+  --squircle: 20px;
+  --font-stack:
+    ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI Variable Display", "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    sans-serif;
+  --spacing-base: max(1rem, 2vw);
+}
+body {
+  font-family: var(--font-stack);
+  font-stretch: condensed;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.desktop-nav a:hover {
+  color: var(--accent-color);
+}
+.site-header.sticky-light {
+  position: sticky;
+  top: 0;
+  background-color: var(--header-bg);
+  border-bottom: 2px solid var(--border-color);
+  z-index: 1000;
+  padding: 1rem var(--spacing-base);
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+.brand svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.desktop-nav {
+  display: none;
+  gap: 2rem;
+  align-items: center;
+}
+.desktop-nav a {
+  font-size: 1.1rem;
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.25rem;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  border-radius: var(--squircle);
+  border: 2px solid var(--border-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.2s ease;
+}
+.btn:hover {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: #fff;
+}
+.header-actions .btn-cta {
+  display: none;
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: #fff;
+}
+
+.btn-cta {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: #fff;
+}
+.btn-cta:hover {
+  background-color: var(--text-color);
+  border-color: var(--text-color);
+}
+.burger-menu {
+  display: flex;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  padding: 0.25rem;
+}
+.burger-menu svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+.mobile-nav-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(59, 40, 24, 0.6);
+  z-index: 2000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: flex-end;
+}
+.mobile-nav-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.mobile-bottom-sheet {
+  background-color: var(--header-bg);
+  width: 100%;
+  border-top: 2px solid var(--border-color);
+  border-radius: var(--squircle) var(--squircle) 0 0;
+  padding: 2rem var(--spacing-base) 3rem;
+  transform: translateY(100%);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.mobile-nav-overlay.is-open .mobile-bottom-sheet {
+  transform: translateY(0);
+}
+.close-menu {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  padding: 0.25rem;
+}
+.close-menu svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+}
+.mobile-nav-links a {
+  font-size: 1.5rem;
+}
+.mobile-cta {
+  margin-top: 1rem;
+  display: inline-flex;
+  width: max-content;
+}
+.site-footer {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  padding: 4rem var(--spacing-base) 2rem;
+  border-top: 2px solid var(--border-color);
+  text-align: left;
+}
+.site-footer a {
+  color: var(--bg-color);
+  font-weight: 400;
+}
+.site-footer a:hover {
+  color: var(--accent-color);
+}
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  padding-bottom: 3rem;
+}
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer-logo {
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+.tagline {
+  margin: 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+.footer-links,
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.site-footer h3 {
+  font-size: 1.25rem;
+  margin: 0;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.footer-links nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.footer-contact address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  line-height: 1.5;
+}
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(242, 235, 225, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.legal-links {
+  display: flex;
+  gap: 1.5rem;
+}
+.copyright {
+  margin: 0;
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+@media (min-width: 768px) {
+  .desktop-nav,
+  .btn-cta {
+    display: flex;
+  }
+  .burger-menu {
+    display: none;
+  }
+  .footer-container {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mobile-nav-overlay {
+    display: none;
+  }
+}
+/* footer extras */
+.footer__extras {
+  margin-top: 16px;
+}
+.footer__extrasInner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footer__social {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.footer-social {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  text-decoration: none;
+}
+.footer-social__icon {
+  display: block;
+}
+.footer__poemWrap {
+  max-width: 520px;
+}
+.footer-poem {
+  opacity: 0.9;
+  font-size: 0.95em;
+  line-height: 1.35;
+}
+/* --- injected by logo step --- */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.brand-logo {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  flex: 0 0 auto;
+}
+.brand-logo * {
+  vector-effect: non-scaling-stroke;
+}
+/* --- /injected by logo step --- */

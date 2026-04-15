@@ -1,0 +1,531 @@
+<!doctype html>
+<html data-page="blog.html" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blog - RollCraft</title>
+    <meta
+      name="description"
+      content="Read our design notes, studio updates, and community news"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script defer src="assets/js/site.js"></script>
+
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <link rel="stylesheet" href="assets/css/chrome.css" />
+    <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rollcraft.com/" />
+    <meta
+      property="og:title"
+      content="RollCraft | Designing Unforgettable Tabletop Adventures"
+    />
+    <meta
+      property="og:description"
+      content="Main page showcasing our newest board games and studio overview"
+    />
+    <meta property="og:image:alt" content="RollCraft – tabletop game studio" />
+    <meta property="og:site_name" content="RollCraft" />
+    <meta property="og:image" content="assets/img/hero_banner.webp" />
+    <link
+      rel="shortcut icon"
+      href="assets/brand/favicon.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body
+    class="bg-[#f8f1e5] text-[#3b2416] font-sans antialiased flex flex-col min-h-screen"
+  >
+    <header class="site-header sticky-light">
+      <div class="header-container">
+        <a href="index.html" class="brand">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M 4 18 L 4 8 A 2 2 0 0 1 6 6 L 8 6 A 3 3 0 0 1 8 12 L 4 12 M 6 12 L 10 18 M 21 6 L 18 6 A 6 6 0 0 0 18 18 L 21 18"
+              />
+            </g>
+            <g fill="currentColor">
+              <circle cx="4" cy="18" r="2" />
+              <circle cx="11" cy="9" r="2" />
+              <circle cx="10" cy="18" r="2" />
+              <circle cx="21" cy="6" r="2" />
+              <circle cx="12" cy="12" r="2" />
+              <circle cx="21" cy="18" r="2" />
+            </g>
+          </svg>
+          <span class="brand-name">RollCraft</span>
+        </a>
+        <nav class="desktop-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="games.html">Games</a>
+          <a href="blog.html">Blog</a>
+        </nav>
+        <div class="header-actions">
+          <a href="games.html" class="btn btn-cta">Shop Games</a>
+          <button
+            class="burger-menu"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-nav-overlay" id="mobile-menu">
+        <div class="mobile-bottom-sheet">
+          <button class="close-menu" aria-label="Close menu">
+            <svg
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+          <nav class="mobile-nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="games.html">Games</a>
+            <a href="blog.html">Blog</a>
+            <a href="games.html" class="btn btn-cta mobile-cta">Shop Games</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-grow">
+      <!-- Hero small -->
+      <section
+        id="hero"
+        class="pt-24 pb-16 md:pt-32 md:pb-24 bg-[#ede2d0] px-4"
+      >
+        <div class="max-w-4xl mx-auto text-left md:text-center">
+          <h1
+            class="text-5xl md:text-7xl font-bold font-condensed text-[#3b2416] mb-6"
+          >
+            Our Studio Blog
+          </h1>
+          <p
+            class="text-xl text-[#3b2416] mb-10 max-w-2xl mx-auto leading-relaxed"
+          >
+            Read our design notes. See our studio updates. Join our community
+            news.
+          </p>
+          <img
+            src="assets/img/hero_small.webp"
+            alt="A soft focus shot of game components"
+            class="w-full h-64 md:h-80 object-cover squircle shadow-lg mx-auto border-4 border-[#3b2416]"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <!-- Blog (Featured) -->
+      <section id="featured-post" class="py-16 md:py-24 px-4 bg-[#f8f1e5]">
+        <div class="max-w-6xl mx-auto">
+          <h2
+            class="text-4xl font-bold font-condensed text-[#3b2416] mb-10 text-left md:text-center"
+          >
+            Featured Post
+          </h2>
+          <div
+            class="flex flex-col md:flex-row bg-[#fffdf9] squircle border-4 border-[#3b2416] overflow-hidden"
+          >
+            <div class="md:w-1/2">
+              <img
+                src="assets/img/blog_featured.webp"
+                alt="A new board game box on a table"
+                class="w-full h-full object-cover min-h-[300px]"
+                loading="lazy"
+              />
+            </div>
+            <div
+              class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center text-left"
+            >
+              <span
+                class="inline-block px-4 py-1 bg-[#c83232] text-white font-bold squircle text-sm mb-6 self-start uppercase tracking-wider"
+                >Studio Update</span
+              >
+              <h3 class="text-3xl font-bold font-condensed text-[#3b2416] mb-4">
+                We Printed Our First Run
+              </h3>
+              <p class="text-lg text-[#3b2416] mb-8 leading-relaxed">
+                The boxes are finally here. We love how the colors pop. Our team
+                worked hard on the card quality. We want every game night to
+                feel special.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog (Latest Posts) -->
+      <section id="blog" class="py-16 md:py-24 px-4 bg-[#ede2d0]">
+        <div class="max-w-6xl mx-auto">
+          <h2
+            class="text-4xl font-bold font-condensed text-[#3b2416] mb-10 text-left md:text-center"
+          >
+            Recent Updates
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <article
+              class="bg-[#fffdf9] squircle border-4 border-[#3b2416] overflow-hidden flex flex-col text-left"
+            >
+              <img
+                src="assets/img/blog_post_1.webp"
+                alt="Dice rolling"
+                class="w-full h-48 object-cover border-b-4 border-[#3b2416]"
+                loading="lazy"
+              />
+              <div class="p-6 flex-grow flex flex-col">
+                <span
+                  class="text-[#c83232] font-bold text-sm mb-2 uppercase tracking-wider"
+                  >Thoughts</span
+                >
+                <h3
+                  class="text-2xl font-bold font-condensed text-[#3b2416] mb-3"
+                >
+                  Why We Love Custom Dice
+                </h3>
+                <p class="text-[#3b2416] mb-6 flex-grow">
+                  Rolling dice is pure fun. We test weight and sound. It makes a
+                  big difference.
+                </p>
+              </div>
+            </article>
+            <article
+              class="bg-[#fffdf9] squircle border-4 border-[#3b2416] overflow-hidden flex flex-col text-left"
+            >
+              <img
+                src="assets/img/blog_post_2.webp"
+                alt="Cards laid out"
+                class="w-full h-48 object-cover border-b-4 border-[#3b2416]"
+                loading="lazy"
+              />
+              <div class="p-6 flex-grow flex flex-col">
+                <span
+                  class="text-[#c83232] font-bold text-sm mb-2 uppercase tracking-wider"
+                  >Art</span
+                >
+                <h3
+                  class="text-2xl font-bold font-condensed text-[#3b2416] mb-3"
+                >
+                  Finding the Right Style
+                </h3>
+                <p class="text-[#3b2416] mb-6 flex-grow">
+                  Good art tells a story. We sketch many ideas before picking
+                  one. See our sketches.
+                </p>
+              </div>
+            </article>
+            <article
+              class="bg-[#fffdf9] squircle border-4 border-[#3b2416] overflow-hidden flex flex-col text-left"
+            >
+              <img
+                src="assets/img/blog_post_3.webp"
+                alt="Group playing games"
+                class="w-full h-48 object-cover border-b-4 border-[#3b2416]"
+                loading="lazy"
+              />
+              <div class="p-6 flex-grow flex flex-col">
+                <span
+                  class="text-[#c83232] font-bold text-sm mb-2 uppercase tracking-wider"
+                  >Events</span
+                >
+                <h3
+                  class="text-2xl font-bold font-condensed text-[#3b2416] mb-3"
+                >
+                  Next Playtest Night
+                </h3>
+                <p class="text-[#3b2416] mb-6 flex-grow">
+                  Come test our new card game. We need your feedback. Snacks are
+                  on us.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Design Notes (Intro) -->
+      <section id="design-notes" class="py-16 md:py-24 px-4 bg-[#f8f1e5]">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-left md:text-center mb-12">
+            <h2 class="text-4xl font-bold font-condensed text-[#3b2416] mb-4">
+              Design Notes
+            </h2>
+            <p class="text-xl text-[#3b2416] max-w-2xl mx-auto">
+              Take a look at how we build rules, create boards, and make things
+              fun.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1 text-left">
+              <h3 class="text-3xl font-bold font-condensed text-[#3b2416] mb-4">
+                Balancing the Rules
+              </h3>
+              <p class="text-lg text-[#3b2416] mb-6 leading-relaxed">
+                A game must be fair. We playtest hundreds of times. If a card is
+                too strong, we change it. If a rule is confusing, we rewrite it.
+                Simple is always better.
+              </p>
+              <ul class="space-y-4 mb-8">
+                <li class="flex items-start">
+                  <svg
+                    class="w-6 h-6 text-[#c83232] mr-3 mt-1 flex-shrink-0"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span class="text-[#3b2416] font-medium"
+                    >We cut rules that slow things down.</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <svg
+                    class="w-6 h-6 text-[#c83232] mr-3 mt-1 flex-shrink-0"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span class="text-[#3b2416] font-medium"
+                    >We make turns fast and snappy.</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <svg
+                    class="w-6 h-6 text-[#c83232] mr-3 mt-1 flex-shrink-0"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span class="text-[#3b2416] font-medium"
+                    >We ensure everyone stays engaged.</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="order-1 md:order-2">
+              <img
+                src="assets/img/design_process.webp"
+                alt="Notebooks and game parts"
+                class="w-full h-80 object-cover squircle border-4 border-[#3b2416] shadow-md"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Design Notes (Prototypes) -->
+      <section id="prototypes" class="py-16 md:py-24 px-4 bg-[#ede2d0]">
+        <div class="max-w-6xl mx-auto">
+          <h2
+            class="text-4xl font-bold font-condensed text-[#3b2416] mb-10 text-left md:text-center"
+          >
+            From Paper to Product
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 text-left">
+            <div class="bg-[#fffdf9] p-8 squircle border-4 border-[#3b2416]">
+              <img
+                src="assets/img/design_prototype_1.webp"
+                alt="Paper prototype"
+                class="w-full h-48 object-cover squircle mb-6 border-2 border-[#3b2416]"
+                loading="lazy"
+              />
+              <h3 class="text-2xl font-bold font-condensed text-[#3b2416] mb-2">
+                Stage One: Paper
+              </h3>
+              <p class="text-[#3b2416]">
+                We start with index cards and markers. It looks messy, but it
+                works fast.
+              </p>
+            </div>
+            <div class="bg-[#fffdf9] p-8 squircle border-4 border-[#3b2416]">
+              <img
+                src="assets/img/design_prototype_2.webp"
+                alt="Final game board"
+                class="w-full h-48 object-cover squircle mb-6 border-2 border-[#3b2416]"
+                loading="lazy"
+              />
+              <h3 class="text-2xl font-bold font-condensed text-[#3b2416] mb-2">
+                Stage Two: Final
+              </h3>
+              <p class="text-[#3b2416]">
+                After testing, we order real wooden pieces and print full
+                boards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Community News -->
+      <section id="community-news" class="py-16 md:py-24 px-4 bg-[#f8f1e5]">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-left md:text-center mb-12">
+            <h2 class="text-4xl font-bold font-condensed text-[#3b2416] mb-4">
+              Community News
+            </h2>
+            <p class="text-xl text-[#3b2416] max-w-2xl mx-auto">
+              You make our games great. See what other players are doing.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Community Card -->
+            <div
+              class="bg-[#fffdf9] p-6 squircle border-4 border-[#3b2416] text-left"
+            >
+              <img
+                src="assets/img/blog_community_1.webp"
+                alt="Players smiling"
+                class="w-full h-40 object-cover squircle mb-4 border-2 border-[#3b2416]"
+                loading="lazy"
+              />
+              <h3 class="text-xl font-bold font-condensed text-[#3b2416] mb-2">
+                Local Tournament Winners
+              </h3>
+              <p class="text-[#3b2416] mb-4">
+                A huge thanks to everyone who joined our weekend tournament.
+              </p>
+            </div>
+            <!-- Community Card -->
+            <div
+              class="bg-[#fffdf9] p-6 squircle border-4 border-[#3b2416] text-left"
+            >
+              <img
+                src="assets/img/blog_community_2.webp"
+                alt="Painted game pieces"
+                class="w-full h-40 object-cover squircle mb-4 border-2 border-[#3b2416]"
+                loading="lazy"
+              />
+              <h3 class="text-xl font-bold font-condensed text-[#3b2416] mb-2">
+                Fan Painted Miniatures
+              </h3>
+              <p class="text-[#3b2416] mb-4">
+                Check out these beautiful paint jobs done by our players.
+              </p>
+            </div>
+            <!-- Contact Card -->
+            <div
+              class="bg-[#3b2416] p-6 squircle border-4 border-[#3b2416] text-center flex flex-col justify-center"
+            >
+              <h3 class="text-2xl font-bold font-condensed text-[#f8f1e5] mb-4">
+                Say Hello!
+              </h3>
+              <p class="text-[#ede2d0] mb-6 leading-relaxed">
+                Want to share your game night photos? Reach out to us.
+              </p>
+              <div class="space-y-3">
+                <a
+                  href="mailto:hello@rollcraftgames.ca"
+                  class="block px-4 py-3 bg-[#c83232] hover:bg-[#a02828] text-white font-bold squircle transition-colors"
+                >
+                  hello@rollcraftgames.ca
+                </a>
+                <a
+                  href="tel:+15145550138"
+                  class="block px-4 py-3 bg-[#ede2d0] hover:bg-[#f8f1e5] text-[#3b2416] font-bold squircle transition-colors"
+                >
+                  +1 514 555 0138
+                </a>
+                <a
+                  href="https://maps.app.goo.gl/Dtriahmx4hS7bvdK9"
+                  target="_blank"
+                  rel="noopener"
+                  class="block px-4 py-3 bg-[#ede2d0] hover:bg-[#f8f1e5] text-[#3b2416] font-bold squircle transition-colors"
+                >
+                  1000 De La Gauchetière Street, Montreal, Canada
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <span class="footer-logo">RollCraft</span>
+          <p class="tagline">Designing unforgettable tabletop adventures</p>
+        </div>
+        <div class="footer-links">
+          <h3>Explore</h3>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="games.html">Games</a>
+            <a href="blog.html">Blog</a>
+          </nav>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <address>
+            <a
+              href="https://maps.app.goo.gl/Dtriahmx4hS7bvdK9"
+              target="_blank"
+              rel="noopener"
+            >
+              1000 De La Gauchetiere Street<br />
+              Montreal, QC H3B 4W5<br />
+              Canada
+            </a>
+            <a href="tel:+15145550138">+1 514 555 0138</a>
+            <a href="mailto:hello@rollcraftgames.ca">hello@rollcraftgames.ca</a>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="legal-links">
+          <a href="terms-conditions.html">Terms</a>
+          <a href="privacy-policy.html">Privacy</a>
+        </div>
+        <p class="copyright">&copy; 2026 RollCraft. All rights reserved.</p>
+      </div>
+    </footer>
+    <script defer src="assets/js/chrome.js"></script>
+  </body>
+</html>
